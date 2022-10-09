@@ -1,0 +1,155 @@
+/* Style the tab buttons */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Nunito&display=swap');
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+*{
+  scroll-behavior: smooth;
+  font-family: 'nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar{
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  padding: 25px 5%;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 3px 20px rgb(black, 0.2);
+}
+
+.navbar *{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 0px 10px;
+}
+
+.white-navbar{
+  /* background-color: white; */
+}
+
+.image{
+  background: linear-gradient(rgba(0, 0, 0, 0.500),rgba(0, 0, 0, 0.500)), url('image/tenvy.png');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.perkenalan{
+  width: 80%;
+  margin: 20%;
+  font-size: 40px;
+  color: white;
+  /* transform: translateX(300%); */
+}
+
+.nup{
+  opacity: 0;
+  transition: 1s all ease;
+}
+.nup-active{
+  opacity: 1 !important;
+  
+}
+
+.perkenalan button{
+  transform: translateY(100px);
+  float: right;
+}
+
+.bgoverlay{
+  background-color: rgb(255, 255, 255);
+  height: 110vh;
+  
+}
+
+.about-content{
+  text-align: center;
+  transform: translateY(120px);
+}
+  
+.flex-container{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+@media only screen and (max-width: 670px) {
+  .flex-container {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+.img-content{
+  margin: 10%;
+} 
+
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+  color: black;
+}
+
+.content-text{
+  margin: 10px;
+}
+
+.content-text h1{
+  margin-right: 50px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.content-text h3{
+  
+  text-align: left;
+}
+
+@media only screen and (max-width: 420px) {
+  .content-text {
+    margin: 0px !important;
+    font-size: 15px;
+  }
+
+  .content-text h3{
+    text-align: center;
+}
+}
+
+img{
+  border-radius: 10%;
+}
+
+.waves{
+  transform: translateY(10px);
+}
+
+.skill{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+.skill-content{
+  text-align: center;
+  transform: translateY(20px);
+}
