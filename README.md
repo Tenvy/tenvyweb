@@ -1,3 +1,4 @@
 # Main Website
 this is my main website
-COMING SOON
+
+will be updated every time i learn more
