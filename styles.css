@@ -30,8 +30,14 @@ body{
   padding: 0px 10px;
 }
 
-.white-navbar{
-  /* background-color: white; */
+#navbar{
+  top: -70px;
+  transition: top 0.3s;;
+}
+
+#white-navbar{
+  opacity: 0;
+  background-color: white;
 }
 
 .image{

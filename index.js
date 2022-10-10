@@ -6,10 +6,12 @@ function tenvybtn() {
     nub.classList.add('nup-active')
 }
 
-const navbar = document.querySelector("navbar");
+window.onscroll = function() {scrollFunction()};
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY >= 5000) {
-        nav.classList.add('white-navbar');
-    }
-})
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-70px";
+  }
+}
