@@ -15,6 +15,11 @@ const ContactDetail = () => {
   const form = useRef();
 	const sendButton = useRef();
 
+  const serviceId = process.env.SERVICE_ID
+  const templateId = process.env.TEMPLATE_ID
+  const userPublicKey = process.env.USER_PUBLIC_KEY
+
+  console.log(templateId);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -26,10 +31,10 @@ const ContactDetail = () => {
 
     emailjs
       .sendForm(
-        "service_qwb9tap",
-        "template_hk8btc7",
+        {serviceId},
+        {templateId},
         form.current,
-        "u9i3SE39-ZlA9IFUR"
+        {userPublicKey}
       )
       .then(
         (result) => {
