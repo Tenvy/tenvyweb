@@ -17,9 +17,7 @@ const ContactDetail = () => {
 
   const serviceId = process.env.SERVICE_ID
   const templateId = process.env.TEMPLATE_ID
-  const userPublicKey = process.env.USER_PUBLIC_KEY
-
-  console.log(templateId);
+  const userPublicKey = process.env.USER_PUBLIC_KEY  
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -31,10 +29,10 @@ const ContactDetail = () => {
 
     emailjs
       .sendForm(
-        {serviceId},
-        {templateId},
+        `${serviceId}`,
+        `${templateId}`,
         form.current,
-        {userPublicKey}
+        `${userPublicKey}`
       )
       .then(
         (result) => {
