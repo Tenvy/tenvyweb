@@ -22,7 +22,7 @@ const Modal = (props) => {
           </div>
           <div className="w-full h-[2px] mb-2 bg-white"/>
           <div className="grid grid-cols-1 md:grid-cols-2 p-4 gap-2 items-center">
-            <a className="hover:brightness-50 mx-auto" target="_blank" href={projectData.link}>
+            <a className="hover:brightness-50" target="_blank" href={projectData.link}>
               <Image className="rounded-lg" src={projectData.banner} width={500} height={500} alt="imagepreview"/>
             </a>
             <div className="text-xl text-center">

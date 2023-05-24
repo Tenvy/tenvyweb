@@ -117,7 +117,7 @@ const ContactDetail = () => {
               </div>
 								<div className="flex flex-col gap-1 lg:h-[60%]">
 									<label>Messages</label>
-									<textarea onChange={e=>setMessages(e.target.value)} className={`bg-transparent resize-none lg:h-full border rounded outline-none ${required&&messages.length<=0? "border-red-600" : ""} focus:placeholder:text-gray-400 placeholder:text-white border-gray-400 focus:border-white duration-200 p-1`} name="message" />
+									<textarea onChange={e=>setMessages(e.target.value)} className={`bg-transparent lg:h-full border rounded outline-none ${required&&messages.length<=0? "border-red-600" : ""} focus:placeholder:text-gray-400 placeholder:text-white border-gray-400 focus:border-white duration-200 p-1`} name="message" />
 								</div>
 								</div>
 							<div className="flex items-center justify-between">

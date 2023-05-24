@@ -9,7 +9,7 @@ const ProjectDetail = (props) => {
   let [projects,setProjects] = useState()
 
   const cardClass = "w-auto h-[200px] md:h-[180px] grid grid-cols-2 px-4 justify-center items-center bg-white bg-opacity-5 rounded hover:bg-opacity-100 hover:text-black font-bold text-xl cursor-pointer group";
-  const imageCardClass = "group-hover:brightness-50 rounded-full mx-auto object-cover w-[100px] h-[100px]";
+  const imageCardClass = "group-hover:brightness-50 rounded-full mx-auto";
 
   useEffect(() => {
     async function fetchData() {
